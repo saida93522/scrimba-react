@@ -1,38 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282d35;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .App {
-  text-align: center;
+  color: #deebf8;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-header {
+  background: #21222a;
+  color: #deebf8;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-link,
+.nav-link {
+  color: #deebf8;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-link:hover,
+.nav-link:hover {
+  color: rgb(222, 235, 248, 0.7);
+  transition: 0.5s;
 }
-
-.App-link {
+.list-group {
+  display: inline-block;
+  list-style-type: circle;
+}
+.list-group-item::before {
+  content: "●";
   color: #61dafb;
+  margin-right: 0.75rem;
 }
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.overlay {
+  position: absolute;
+  top: 7vw;
+  left: 65%;
+  mix-blend-mode: luminosity;
+  background-image: url("/public/bg-img.png");
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 60%;
+  height: 100%;
+  opacity: 0.1;
+}
+main {
+  height: 100vh;
 }
