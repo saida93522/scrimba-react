@@ -14,6 +14,9 @@ const Main = () => {
             Powers thousands of enterprise apps, including mobile apps
           </li>
         </ul>
+        <a href="/learnMore" className="btn btn-link btn-dark">
+          Learn More
+        </a>
       </div>
     </div>
   );
