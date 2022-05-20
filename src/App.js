@@ -5,12 +5,9 @@ function App() {
   return (
     <div className="App">
       <div className="overlay"></div>
-      <header className="nav-header fixed-top">
-        <Header />
-      </header>
-      <main className="h-100">
-        <Main />
-      </main>
+      <Header />
+
+      <Main />
     </div>
   );
 }
