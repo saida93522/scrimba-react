@@ -22,11 +22,13 @@ code {
 
 /* nav */
 nav {
+  position: fixed;
   display: flex;
   align-items: center;
   height: 90px;
   padding: 30px 25px;
   background: #21222a;
+  width: 100%;
 }
 
 .nav--logo_text,
@@ -53,8 +55,9 @@ nav {
 
 /* main */
 main {
-  padding: 57px 27px;
+  padding: 13vw 27px;
   color: white;
+  height: 100vh;
 }
 
 .main--title {
